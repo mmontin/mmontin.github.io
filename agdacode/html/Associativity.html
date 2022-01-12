@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><title>Associativity</title><link rel="stylesheet" href="Agda.css"></head><body><pre class="Agda"><a id="1" class="Keyword">module</a> <a id="8" href="Associativity.html" class="Module">Associativity</a> <a id="22" class="Keyword">where</a>
+
+<a id="29" class="Keyword">data</a> <a id="ℕ"></a><a id="34" href="Associativity.html#34" class="Datatype">ℕ</a> <a id="36" class="Symbol">:</a> <a id="38" class="PrimitiveType">Set</a> <a id="42" class="Keyword">where</a>
+  <a id="ℕ.zero"></a><a id="50" href="Associativity.html#50" class="InductiveConstructor">zero</a> <a id="55" class="Symbol">:</a> <a id="57" href="Associativity.html#34" class="Datatype">ℕ</a>
+  <a id="ℕ.suc"></a><a id="61" href="Associativity.html#61" class="InductiveConstructor">suc</a>  <a id="66" class="Symbol">:</a> <a id="68" href="Associativity.html#34" class="Datatype">ℕ</a> <a id="70" class="Symbol">→</a> <a id="72" href="Associativity.html#34" class="Datatype">ℕ</a>
+
+<a id="75" class="Keyword">infixr</a> <a id="82" class="Number">20</a> <a id="85" href="Associativity.html#125" class="InductiveConstructor Operator">_↪_</a>
+
+<a id="90" class="Keyword">data</a> <a id="List"></a><a id="95" href="Associativity.html#95" class="Datatype">List</a> <a id="100" class="Symbol">:</a> <a id="102" class="PrimitiveType">Set</a> <a id="106" class="Keyword">where</a>
+  <a id="List.∅"></a><a id="114" href="Associativity.html#114" class="InductiveConstructor">∅</a> <a id="116" class="Symbol">:</a> <a id="118" href="Associativity.html#95" class="Datatype">List</a>
+  <a id="List._↪_"></a><a id="125" href="Associativity.html#125" class="InductiveConstructor Operator">_↪_</a> <a id="129" class="Symbol">:</a> <a id="131" href="Associativity.html#34" class="Datatype">ℕ</a> <a id="133" class="Symbol">→</a> <a id="135" href="Associativity.html#95" class="Datatype">List</a> <a id="140" class="Symbol">→</a> <a id="142" href="Associativity.html#95" class="Datatype">List</a>
+
+<a id="zeros"></a><a id="148" href="Associativity.html#148" class="Function">zeros</a> <a id="154" class="Symbol">:</a> <a id="156" href="Associativity.html#95" class="Datatype">List</a>
+<a id="161" href="Associativity.html#148" class="Function">zeros</a> <a id="167" class="Symbol">=</a> <a id="169" href="Associativity.html#50" class="InductiveConstructor">zero</a> <a id="174" href="Associativity.html#125" class="InductiveConstructor Operator">↪</a> <a id="176" href="Associativity.html#50" class="InductiveConstructor">zero</a> <a id="181" href="Associativity.html#125" class="InductiveConstructor Operator">↪</a> <a id="183" href="Associativity.html#50" class="InductiveConstructor">zero</a> <a id="188" href="Associativity.html#125" class="InductiveConstructor Operator">↪</a> <a id="190" href="Associativity.html#114" class="InductiveConstructor">∅</a>
+
+<a id="193" class="Keyword">infixl</a> <a id="200" class="Number">30</a> <a id="203" href="Associativity.html#209" class="Function Operator">_++_</a>
+
+<a id="_++_"></a><a id="209" href="Associativity.html#209" class="Function Operator">_++_</a> <a id="214" class="Symbol">:</a> <a id="216" href="Associativity.html#95" class="Datatype">List</a> <a id="221" class="Symbol">→</a> <a id="223" href="Associativity.html#95" class="Datatype">List</a> <a id="228" class="Symbol">→</a> <a id="230" href="Associativity.html#95" class="Datatype">List</a>
+<a id="235" href="Associativity.html#114" class="InductiveConstructor">∅</a> <a id="237" href="Associativity.html#209" class="Function Operator">++</a> <a id="240" href="Associativity.html#240" class="Bound">l₁</a> <a id="243" class="Symbol">=</a> <a id="245" href="Associativity.html#240" class="Bound">l₁</a>
+<a id="248" class="Symbol">(</a><a id="249" href="Associativity.html#249" class="Bound">x</a> <a id="251" href="Associativity.html#125" class="InductiveConstructor Operator">↪</a> <a id="253" href="Associativity.html#253" class="Bound">l</a><a id="254" class="Symbol">)</a> <a id="256" href="Associativity.html#209" class="Function Operator">++</a> <a id="259" href="Associativity.html#259" class="Bound">l₁</a> <a id="262" class="Symbol">=</a> <a id="264" href="Associativity.html#249" class="Bound">x</a> <a id="266" href="Associativity.html#125" class="InductiveConstructor Operator">↪</a> <a id="268" href="Associativity.html#253" class="Bound">l</a> <a id="270" href="Associativity.html#209" class="Function Operator">++</a> <a id="273" href="Associativity.html#259" class="Bound">l₁</a>
+
+</pre></body></html>

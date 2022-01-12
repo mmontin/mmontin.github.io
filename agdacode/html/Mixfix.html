@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><title>Mixfix</title><link rel="stylesheet" href="Agda.css"></head><body><pre class="Agda"><a id="1" class="Keyword">module</a> <a id="8" href="Mixfix.html" class="Module">Mixfix</a> <a id="15" class="Keyword">where</a>
+
+<a id="22" class="Keyword">data</a> <a id="ℕ"></a><a id="27" href="Mixfix.html#27" class="Datatype">ℕ</a> <a id="29" class="Symbol">:</a> <a id="31" class="PrimitiveType">Set</a> <a id="35" class="Keyword">where</a>
+  <a id="ℕ.zero"></a><a id="43" href="Mixfix.html#43" class="InductiveConstructor">zero</a> <a id="48" class="Symbol">:</a> <a id="50" href="Mixfix.html#27" class="Datatype">ℕ</a>
+  <a id="ℕ.suc"></a><a id="54" href="Mixfix.html#54" class="InductiveConstructor">suc</a>  <a id="59" class="Symbol">:</a> <a id="61" href="Mixfix.html#27" class="Datatype">ℕ</a> <a id="63" class="Symbol">→</a> <a id="65" href="Mixfix.html#27" class="Datatype">ℕ</a>
+
+<a id="68" class="Keyword">data</a> <a id="List"></a><a id="73" href="Mixfix.html#73" class="Datatype">List</a> <a id="78" class="Symbol">:</a> <a id="80" class="PrimitiveType">Set</a> <a id="84" class="Keyword">where</a>
+  <a id="List.∅"></a><a id="92" href="Mixfix.html#92" class="InductiveConstructor">∅</a> <a id="94" class="Symbol">:</a> <a id="96" href="Mixfix.html#73" class="Datatype">List</a>
+  <a id="List._↪_"></a><a id="103" href="Mixfix.html#103" class="InductiveConstructor Operator">_↪_</a> <a id="107" class="Symbol">:</a> <a id="109" href="Mixfix.html#27" class="Datatype">ℕ</a> <a id="111" class="Symbol">→</a> <a id="113" href="Mixfix.html#73" class="Datatype">List</a> <a id="118" class="Symbol">→</a> <a id="120" href="Mixfix.html#73" class="Datatype">List</a>
+
+<a id="zeros"></a><a id="126" href="Mixfix.html#126" class="Function">zeros</a> <a id="132" class="Symbol">:</a> <a id="134" href="Mixfix.html#73" class="Datatype">List</a>
+<a id="139" href="Mixfix.html#126" class="Function">zeros</a> <a id="145" class="Symbol">=</a> <a id="147" href="Mixfix.html#43" class="InductiveConstructor">zero</a> <a id="152" href="Mixfix.html#103" class="InductiveConstructor Operator">↪</a> <a id="154" class="Symbol">(</a><a id="155" href="Mixfix.html#43" class="InductiveConstructor">zero</a> <a id="160" href="Mixfix.html#103" class="InductiveConstructor Operator">↪</a> <a id="162" class="Symbol">(</a><a id="163" href="Mixfix.html#43" class="InductiveConstructor">zero</a> <a id="168" href="Mixfix.html#103" class="InductiveConstructor Operator">↪</a> <a id="170" href="Mixfix.html#92" class="InductiveConstructor">∅</a><a id="171" class="Symbol">))</a> 
+
+</pre></body></html>
